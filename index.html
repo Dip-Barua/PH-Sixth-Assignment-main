@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_6</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="shortcut icon" href="assets/img/logo.webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    .loader {
+    border: 8px solid #e5e7eb; /* gray-300 */
+    border-top-color: #34d399; /* green-500 */
+    border-radius: 50%;
+    width: 5rem; /* Adjust size as needed */
+    height: 5rem; /* Adjust size as needed */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+</style>
+</head>
+
+<body>
+    <!--Beginning of Header Section -->
+    <header>
+        <nav class="flex  justify-between items-center mt-8 md:py-8  w-9/12  mx-auto relative">
+            <div class="flex  items-center justify-between gap-3">
+                <img class="w-10" src="./assets/img/logo.webp" alt="">
+                <h1 class="text-2xl text-center md:text-4xl font-bold lg:ml-4">Peddy</h1>
+            </div>
+        
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex justify-between">
+                <button id="mobile-menu-button" class="text-xl focus:outline-none">
+                    <svg class="w-8 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex justify-between gap-3">
+                <ul class="flex text-xl gap-20 font-bold items-center font-lato text-secondary">
+                    <li><a class="hover:text-green-400"  href="">Home</a></li>
+                    <li><a class="hover:text-green-400"  href="">Contact</a></li>
+                    <li><a class="hover:text-green-400"  href="">Shop</a></li>
+                </ul>
+            </div>
+        
+            <!-- Profile Image -->
+            <div class="flex items-center gap-1 md:gap-3">
+                <a href="">
+                    <img class="w-14 h-14 border-2 hidden md:block p-2 rounded-full border-gray-500" src="./assets/img/Contact.png" alt="">
+                </a>
+            </div>
+        
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md hidden">
+                <ul class="flex flex-col text-xl font-bold items-center font-lato text-secondary">
+                    <li><a class="py-4 hover:bg-green-400 block px-4" href="">Home</a></li>
+                    <li><a class="py-4 hover:bg-green-400 block px-4" href="">Shop</a></li>
+                    <li><a class="py-4 hover:bg-green-400 block px-4" href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+
+        <div>
+            <div class="pt-14 pb-10 text-center ">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-500 text-center">Bringing Families Together ❤️‍🔥 </h2>
+                <h1 class="text-3xl md:text-[4rem] font-extrabold  font-lato leading-tight text-center mt-14 mb-10 mx-1">Your Path to Adoption <br> Starts Here</h1>
+                <p class="text-center text-gray-500 font-bold md:text-lg mx-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking 
+                    <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+
+                    <div class="btn mt-16 text-white bg-teal-500 rounded-xl text-xl "><a href="#apt">View More</a></div>
+            </div>
+        </div>
+        <div>
+            <img class="mx-auto w-10/12 md:w-[42rem] " src="assets/img/pet.webp" alt="">
+        </div>
+    </header>
+    <!-- End of header Section -->
+
+
+
+<!-- Beginning of Main Section -->
+ <main class="py-[10rem]">
+<div>
+    <div>
+        <h1 id="apt" class="text-center text-3xl md:text-5xl  font-bold my-10">Adopt Your Best Friend</h1>
+        <p class="w-10/12 text-center text-gray-500 md:text-lg font-bold mx-auto">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+    </div>
+
+    <!-- Category Nav starts Here -->
+    <div>
+        <nav id="categories" class="w-11/12 gap-8 md:gap-0 grid grid-cols-2 grid-rows-2 md:w-6/12 mx-auto text-center py-[4rem] md:flex md:justify-between "></nav>
+        
+    </div>  
+      
+    <!-- Category Nav Ends Here -->
+
+<div class="flex flex-col md:flex-row justify-between w-8/12 mx-auto py-[3rem]">
+    <div>
+        <h1 class=" text-2xl md:text-3xl text-center font-bold ">Best Deal For you</h1>
+    </div>
+    <div class="text-center mt-6 md:mt-0">
+        <div class="btn text-white bg-teal-500 rounded-xl mt- text-2xl px-8"><a id="sortByPriceBtn" class="mx-auto">Sort By Price</a></div>
+    </div>
+</div>
+
+</div>
+
+
+<div class="flex flex-col md:flex-row mx-auto w-full md:w-10/12 gap-4">
+    <div id="pets" class="w-10/12 md:w-9/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 p-8 rounded-xl border-2 relative">
+        
+    </div>
+    <div class="w-10/12 mx-auto md:w-3/12 p-4 border-2 rounded-xl">
+        <div id="imageDisplay" class="grid grid-cols-2 gap-4"></div>
+    </div></div>
+
+
+    
+    <div id="countdownDisplay" class="fixed text-white text-8xl font-bold inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" style="display: none;">
+    </div>
+    
+    
+ </main>
+<!-- End of Main Section -->
+
+
+
+
+
+
+    <!--Beginning of Footer Section -->
+
+    <footer class="bg-gray-900 py-16">
+        <div class="grid grid-cols-2 md:flex w-11/12 md:w-9/12 mx-auto justify-between">
+            <div class="flex flex-col ">
+                <div class="flex md:flex-row items-center gap-2">
+                    <img class="w-8" src="./assets/img/logo.webp" alt="">
+                    <h1 class=" text-center md:text-3xl font-bold text-slate-100">Peddy</h1>
+                </div>
+                <p class="text-slate-400 mt-8 text-sm md:text-lg leading-[1.7rem]">
+                    Location: av. Washington 165, NY CA 54003 <br>
+                    Phone: +31 85 964 47 25 <br>
+                    Email: info@yourdomain.com <br> 
+                    Openings hours: 9.00 AM - 5.00 PM
+                </p>
+                <div class="flex gap-10 md:gap-8 mt-8 w-full justify-around">
+                    <img class="w-10 h-9" src="assets/img/fb.png" alt="">
+                    <img class="w-10 h-9" src="assets/img/x.png" alt="">
+                    <img class="w-10 h-9" src="assets/img/yt.png" alt="">
+                    <img class="w-10 h-9" src="assets/img/ig.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col ">
+                <div class="flex flex-col md:flex-row items-center gap-2">
+                    <h1 class=" text-center md:text-3xl font-bold text-slate-100">Useful Links</h1>
+                </div>
+                <p class="text-slate-300 mt-8 text-sm md:text-lg leading-[1.7rem]">
+                  <ul class="text-slate-400 pl-5 md:pl-0 text-start text-sm md:text-lg">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Animals</li>
+                    <li>Foundation</li>
+                    <li>Contact</li>
+                  </ul>
+                </p>
+            </div>
+            <div class="hidden md:block flex flex-col ">
+                <div class="flex flex-col md:flex-row items-center gap-2">
+                    <h1 class=" text-center md:text-2xl font-bold text-slate-100">Drop A Message</h1>
+                </div>
+                <p class="text-slate-300 mt-8 text-lg leading-[1.7rem]">
+                  <input class="rounded-2xl w-[100%] h-8 p-6 bg-gray-700 outline-none" type="text" placeholder="Type Your Message">
+                  <div class="btn mt-4 text-white w-[100%] bg-teal-700 outline-none rounded-xl text-xl  mx-auto border-none"><a href="#">Subscribe</a></div>
+                </p>
+            </div>
+        </div>
+        <p class="text-center text-slate-200 mt-16">A Private Commitment by Dip</p>
+    </footer>
+
+    <!--End of Footer Section -->
+
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#111111B3',
+                    },
+                    fontFamily: {
+                        lato: ['"Lato"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+            <script>
+                // Mobile menu toggle
+                const menuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+            
+                menuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            </script>
+            <!-- You can open the modal using ID.showModal() method -->
+            <div id="petDetailsModal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-gray-600 bg-opacity-50">
+                <div class="bg-white rounded-lg shadow-lg p-4 md:p-6 w-9/12 md:w-3/12 ">
+                    <img id="petImage" src="" alt="Pet Image" class="w-full h-full object-cover rounded mb-4">
+                    <h2 id="petName" class=" text-2xl md:text-3xl font-bold md:mb-2"></h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 my-2 gap-1">
+                    <p class=" flex items-center text-slate-600 text-center gap-2"><img src="/assets/img/breed.png" class="w-4 h-4"><strong class="text-sm md:text-xl">Breed:</strong> <span id="petBreed"></span></p>
+                    <p class=" flex items-center text-slate-600 text-center gap-2"><img src="/assets/img/birth.png" class="w-6 h-6"><strong class="text-sm md:text-xl">Birth Date:</strong> <span id="petBirth"></span></p>
+                    <p class=" flex items-center text-slate-600 text-center gap-2"><img src="/assets/img/gender.png" class="w-6 h-6"><strong class="text-sm md:text-xl">Gender:</strong> <span id="petGender"></span></p>
+                    <p class=" flex items-center text-slate-600 text-center gap-2"><img src="/assets/img/dollar.png" class="w-6 h-6"><strong class="text-sm md:text-xl">Price:</strong> <span id="petPrice"></span></p>
+                    <p class=" flex items-center text-slate-600 text-center gap-2"><img src="/assets/img/gender.png" class="w-6 h-6"><strong class="text-sm md:text-xl">Vaccinated status:</strong> <span id="vaccinated_status"></span></p>
+                </div>
+                    <br>
+                    <h2 class="text-sm md:text-xl"><strong class="text-sm md:text-xl">Details Information</strong></h2>
+                    <p  class="text-slate-600 my-3"> <span class="text-sm md:text-xl" id="pet_details"></span></p>
+                    <div class="flex w-full">
+                        <button class="close text-white text-2xl btn bg-green-400 w-6/12 mx-auto">Close</button>
+
+                    </div>
+                </div>
+            </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/content.js"></script>
+</body>
+
+</html>
