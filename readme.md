@@ -1,4 +1,5 @@
 # Pet Adoption Portal
+![image](https://github.com/user-attachments/assets/92a4f13d-5b72-4afe-9aa3-e7ecc39b9657)
 
 ## Short Description
 The Pet Adoption Portal is a web application which is designed to facilitate the adoption of pets. It provides users with an interactive interface to explore various pet categories, view pet details, and initiate the adoption process seamlessly.
